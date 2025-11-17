@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <thead>
+            <h3>Thêm mới nhân viên</h3>
+        </thead>
+        <tbody>
+            <div>
+                <label for="fullName">Họ và tên</label>
+                <input type="text" name="fullName" id="fullName" autofocus required>
+            </div>
+            <br>
+            <div>
+                <label for="dayOfBirth">Ngày sinh đầy đủ</label>
+                <input type="date" name="dayOfBirth" id="dayOfBirth">
+            </div>
+            <br>
+            <div>
+                <label for="month">Tháng và năm</label>
+                <input type="month" name="month" id="month">
+            </div>
+            <br>
+            <div>
+                <label for="time">Thời gian</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <br>
+            <div>
+                <label for="sex" name="sex">Giới tính</label>
+                <input type="radio" id="sex" name="sex" value="male">Nam 
+                <input type="radio" id="sex" name="sex" value="male">Nữ
+                <input type="radio" id="sex" name="sex" value="other">Khác
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+            <br>
+            <div>
+                <label for="IntroduceYourself">Giới thiệu bản thân</label>
+                <textarea name="IntroduceYourself" id="IntroduceYourself"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="city" name="city">Thành phố</label>
+                <select name="city" id="city" multiple size="2">
+                    <option value="HN">Hà Nội</option>
+                    <option value="Hue">Huế</option>
+                    <option value="DN">Đà Nẵng</option>
+                    <option value="TPHCM">Tp.Hồ Chí Minh</option>
+                </select>
+                
+            </div>
+            <br>
+            <div>
+                <label for="picture">Hình ảnh</label>
+                <input type="file" name="picture" id="picture">
+            </div>
+            <br>
+            <div>
+                <label for="hoppy">Sở thích</label>
+                <input type="checkbox" id="hobby" name="code" value="code">Code
+                <input type="checkbox" id="hobby" name="playGame" value="playGame">Chơi game
+                <input type="checkbox" id="hobby" name="swimming" value="swimming">Bơi lội 
+                <input type="checkbox" id="hobby" name="football" value="fooball">Đá bóng
+            </div>
+            <br>
+            <div>
+                <label for="progress">Tiến độ hoàn thành công việc</label>
+                <input type="range" id="progress" name="progress" min="1" max="10">
+            </div>
+            <br>
+            <div>
+                <label for="experience">Năm kinh nghiệm</label>
+                <input type="number" id="experience" name="experience">
+            </div>
+            <br>
+            <div>
+                <label for="search">Tìm kiếm</label>
+                <input type="search" id="search" name="search">
+            </div>
+            <br>
+            <div>
+                <label for="favoriteColor">Màu sắc yêu thích</label>
+                <input type="color" id="favoriteColor" name="favoriteColor">
+            </div>
+            <br>
+        </tbody>
+        <tfoot>
+            <div>
+                <button>Huỷ</button>
+                <button type="reset">Làm mới</button>
+                <button>Gửi</button>
+            </div>
+        </tfoot>
+    </form>
+</body>
+
+</html>
