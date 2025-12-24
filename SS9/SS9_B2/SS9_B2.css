@@ -1,45 +1,80 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+:root {
+    --gap: 18px;
+    --pad: 14px;
+    --box-height: 84px;
+    --box-radius: 6px;
+    --box-bg: #2ecc71;
+    /* green similar to image */
+    --frame-bg: #f5f5f5;
+    --frame-border: #111;
+    /* thin dark border */
+}
 
-        body {
-            background-color: #f0f0f0;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-        .container {
-            background-color: #e0e0e0;
-            padding: 20px;
-            width: 90%;
-            max-width: 1000px;
+.wrap {
+    box-sizing: border-box;
+    padding: 18px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--frame-bg);
+}
 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-            gap: 15px;
-        }
+.frame {
+    width: 98%;
+    max-width: 1400px;
+    border: 2px solid var(--frame-border);
+    border-radius: 8px;
+    padding: 14px;
+    box-sizing: border-box;
+    background: #fff;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+}
 
-        .item {
-            background-color: #2ecc71;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 5px;
+.box {
+    height: var(--box-height);
+    border-radius: var(--box-radius);
+    background: var(--box-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.02) inset;
+    user-select: none;
+}
 
+/* make the grid items a bit taller on wider screens to match the image aspect */
+@media (min-width: 1100px) {
+    .box {
+        height: 96px;
+    }
+}
 
-            width: 220px;
-            height: 50px;
+/* responsive: drop to 2 columns on narrow screens */
+@media (max-width: 720px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+/* center the number visually like the image (small and subtle) */
+.box span {
+    font-size: 18px;
+    opacity: 0.9;
+}
