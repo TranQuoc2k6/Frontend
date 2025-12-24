@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 30px;
+    list-style: none;
+    background-color: aqua;
+}
+ul li{
+    padding: 10px;
+    background-color: rgb(118, 118, 174);
+    width: 500px;
+}
+li+li{
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+}
+a::after{
+    content: " →";
+}
+li:hover{
+    background-color: yellow;
+}

@@ -1,0 +1,97 @@
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 80px;
+    }
+
+    .hero-text {
+        max-width: 450px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        color: #333;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .hero-text button {
+        background: #333;
+        color: white;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+
+
+
+    .card-section {
+        background: #222;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 60px;
+        border-radius: 25px;
+        margin: 40px auto;
+        width: 85%;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .card i {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #ddd;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #ccc;
+        line-height: 1.5;
+    }
+    .hero-images {
+        position: relative;
+        width: 340px;
+        height: 260px;
+    }
+
+    .hero-images img {
+        position: absolute !important;  
+        border-radius: 6px;
+    }
+
+    
+    .hero-images .img1 {
+        width: 180px;
+        left: 50px;
+        top: -80px;
+        z-index: 1;
+    }
+
+    .hero-images .img2 {
+        width: 180px;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }

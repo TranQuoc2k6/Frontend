@@ -1,0 +1,27 @@
+body{
+    width: auto;
+    gap: 15px;
+    display: flex;
+}
+.box {
+    width: 320px;               
+    padding: 25px;
+    border: 2px solid #dcd4f3;    
+    border-radius: 12px;       
+    text-align: center;          
+   
+}
+
+.box h2 {
+    color: #b40000;               /* đỏ đậm giống hình */
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.box p {
+    color: #1d1b69;               /* tím đậm */
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.4;
+}

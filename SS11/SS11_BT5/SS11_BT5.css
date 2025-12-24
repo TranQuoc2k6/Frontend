@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    padding: 15px;
+}
+
+
+#main, #aside, nav, .col {
+    background: #a94442;
+    color: white;
+    padding: 20px;
+    margin: 8px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #a94442;   
+    background: none;
+}
+
+.menu-icon {
+    font-size: 28px;
+    background: none; 
+    color: #a94442;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header nav {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;   
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        background: #a94442;
+        color: white;
+        padding: 10px 15px;
+        font-size: 26px;
+        border-radius: 6px;
+    }
+
+    #nav {
+        width: 100%;
+        margin-top: 10px;
+        order: 3;    
+        padding: 15px;
+        text-align: center;
+    }
+
+    #main {
+        height: 300px;
+    }
+
+    #aside {
+        display: none;
+    }
+
+    .columns .col {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    #main {
+        height: 350px;
+    }
+
+    #aside {
+        height: 200px;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .columns .col:nth-child(5),
+    .columns .col:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 200px auto;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-wrap: nowrap;  
+        gap: 20px;
+        width: 100%;
+    }
+
+    #main {
+        flex: 3;
+        height: 420px;
+        min-width: 0;        
+    }
+
+    #aside {
+        flex: 1;
+        height: 420px;
+        min-width: 0;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        width: 100%;
+    }
+}

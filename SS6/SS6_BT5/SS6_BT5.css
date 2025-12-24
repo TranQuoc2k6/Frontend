@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.product{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(238 244 246);
+}
+ul{
+    list-style: none;
+    border-radius: 3px;
+}
+ul li{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+}
+li+li{
+    margin-top: 30px;
+}
+.product li{
+    background-color: rgb(217 234 242);
+}
+.product li[data-sale='true']{
+    background-color: rgb(240 219 117);
+}
+.product li:hover {
+    background-color: rgb(5, 48, 68);
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border-radius: 3px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+}
+button[data-type='primary']{
+    background-color: blue;
+    color: white;
+}
+button[data-type='secondary']{
+    background-color: silver;
+    color: white;
+}
+button[data-type='danger']{
+    background-color: red;
+    color: white;
+}

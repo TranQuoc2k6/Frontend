@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikkei Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .card-custom {
+            width: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card-custom img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .container-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card-title {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        img{
+            position: relative;
+        }
+        .card-img-overlay{
+            color: black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h3 class="ms-4 mb-3 mt-3">Rikkei cards</h3>
+
+<div class="container-cards">
+
+    <!-- Card 1 -->
+    <div class="card card-custom text-bg-dark">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="card-img" alt="">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Short title, long jacket</h5>
+            <p class="card-text"><small>🌍 Earth • ⏳ 3d</small></p>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card card-custom text-bg-dark">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="card-img" alt="">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Much longer title that wraps to multiple lines</h5>
+            <p class="card-text"><small>🇵🇰 Pakistan • ⏳ 4d</small></p>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card card-custom text-bg-dark">
+        <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9" class="card-img" alt="">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Another longer title belongs here</h5>
+            <p class="card-text"><small>🌴 California • ⏳ 5d</small></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

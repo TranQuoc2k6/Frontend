@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body div{
+    padding: 30px;
+    width: 500px;
+    background-color: rgb(234 234 234);
+}
+span{
+    line-height: 30px;
+}
+div img{
+    vertical-align: middle;
+}
+div span{
+    margin-bottom: 10px;
+}
+body button{
+    padding: 6px;
+    border-radius: 5px;
+    background-color: aqua;
+    border: none;
+    margin-top: 10px; 
+    margin-right: 10px;
+}
+button:hover{
+    background-color: red;
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#profile{
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 100px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: aqua;
+}
+#profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+button{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+.follow:hover{
+    background-color: red;  
+    border: none;
+}
+.follow::after{
+    content: "→";
+}

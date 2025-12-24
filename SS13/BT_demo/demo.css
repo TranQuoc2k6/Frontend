@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 208px;
+    border: 1px solid #E5E7EB;
+    font-size: 14px;
+}
+
+.text-logo {
+    display: flex;
+    align-items: center;
+}
+
+.text-logo div {
+    font-weight: 700;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.list-nav ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.list-nav ul li {
+    list-style: none;
+}
+
+.list-nav ul li a {
+    color: #4B5563;
+    text-decoration: none;
+}
+
+nav button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563EB;
+    color: #FFFFFF;
+    margin: 15px 0;
+}
+
+header {
+    padding: 80px 208px;
+    display: flex;
+    gap: 38px;
+}
+
+.content {
+    margin-top: 20px;
+    flex: 1;
+}
+
+.picture-study {
+    flex: 1;
+    position: relative;
+}
+
+.picture-study img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+div h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px 0;
+    color: #4B5563;
+}
+
+.btn-start-study {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-right: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+
+.btn-learn-about {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    padding: 15px 20px;
+}
+
+.product {
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+}
+
+.product div p:nth-child(1) {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2563EB;
+}
+
+.product div p:nth-child(2) {
+    color: #4B5563;
+}
+
+.product div p {
+    line-height: 15px;
+}
+
+.tick {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    top: 468px;
+    right: 506px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+

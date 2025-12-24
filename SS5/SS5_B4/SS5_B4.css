@@ -1,0 +1,56 @@
+.hl_red {
+    background-color: #f5f3f0;
+    color: red;
+}
+
+.box_title {
+    border: 3px solid green;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper {
+    background-color: #e5e9ed;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 15px;
+}
+
+.wrapper h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.code_block {
+    border-left: 5px solid #01ad6d;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 12px;
+}
+
+.cl_brown {
+    color: #aa5652;
+}
+
+.cl_red {
+    color: red;
+}
+
+.cl_blue {
+    color: blue;
+}
+
+.demo_btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #01ad6d;
+    color: white;
+}
+
+.demo_btn:hover {
+    background-color: #316f58;
+}

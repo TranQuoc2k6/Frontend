@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #da9292;
+}
+
+.content-box{
+    text-align: center;
+    background: #fff;
+    padding: 60px 40px;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 6px;
+    margin-bottom: 0 auto;
+}
+
+.content-box h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content-box p{
+    font-size: 17px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.line{
+    
+    width: 50px;
+    height: 2px;
+    background: #d0d0d0;
+    margin: 25px auto;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button{
+    padding: 12px 28px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.download{
+    background: #3b8ef3;
+    color: white;
+    border-color: #3b8ef3;
+}
+
+.learn{
+    background: white;
+    color: #444;
+}
+
+
+footer{
+    margin: 0px auto 0px auto;
+    width: 800px;
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+    background-color: silver;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.social i{
+    cursor: pointer;
+    color: #777;
+    transition: 0.2s;
+}
+
+.social i:hover{
+    color: #000;
+}
+
+.credit a{
+    color: #777;
+    text-decoration: none;
+}
+
+.credit a:hover{
+    text-decoration: underline;
+}

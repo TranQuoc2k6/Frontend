@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    width: 300px;
+    list-style-type: none;
+    background-color: rgb(238 244 246);
+    padding-left: 50px;
+    border-radius: 15px;
+}
+a::after{
+    content: "→";
+    color: aqua;
+}
+a:hover{
+    color: red;
+}
+a{
+    Text-decoration: none;
+}

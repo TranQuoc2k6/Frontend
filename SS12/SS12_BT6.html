@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="p-5 bg-white rounded shadow-sm">
+
+        <h3 class="mb-4">Payment</h3>
+
+        <!-- Radio buttons -->
+        <div class="mb-4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="payment" id="credit" checked>
+                <label class="form-check-label" for="credit">
+                    Credit card
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="payment" id="debit">
+                <label class="form-check-label" for="debit">
+                    Debit card
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="payment" id="paypal">
+                <label class="form-check-label" for="paypal">
+                    PayPal
+                </label>
+            </div>
+        </div>
+
+        <!-- Form input -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Name on card</label>
+                <input type="text" class="form-control">
+                <small class="text-muted">Full name as displayed on card</small>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Credit card number</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <label class="form-label">Expiration</label>
+                <input type="text" class="form-control"style="width: 100px;">
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label" >CVV</label>
+                <input type="text" class="form-control"style="width: 100px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <button class="btn btn-primary w-100 py-2" style="font-size: 18px;">
+            Continue to checkout
+        </button>
+
+    </div>
+</div>
+
+</body>
+</html>

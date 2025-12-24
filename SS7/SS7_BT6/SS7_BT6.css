@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    padding: 40px;
+}
+
+.accordion {
+    width: 600px;
+    margin: auto;
+}
+.hihi{
+    color: pink;
+}
+.item {
+    background: white;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: 0.3s;
+}
+
+.header::after {
+    bottom: 20px;
+    content: "⌄";
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.header.active {
+    background: #cfe2ff; 
+}
+
+.header.active::after {
+    bottom: 5px;
+    transform: rotate(180deg);
+}
+
+.content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+
+.content.show {
+    padding: 15px;
+    max-height: 300px;
+}

@@ -1,0 +1,74 @@
+.product-container {
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+}
+
+.product-card {
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #d9e9f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+}
+
+.product-card:hover {
+    background-color: red;
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 220px;
+    padding-top: 18px;
+}
+
+.product-card button {
+    height: 36px;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+    background-color: #269dd9;
+    color: white;
+}
+
+.product-card h2 {
+    color: #135e82;
+    margin-top: 5px;
+}
+
+.product-img {
+    height: 154px;
+}
+
+button:hover {
+    background-color: #246b8e;
+}
+
+button::before {
+    content: "👌vip";
+}
+
+.product-card[data-sale="true"] {
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.product-card[data-sale="true"]::before {
+    content: "SALE";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.product-card+.product-card {
+    margin-left: 30px;
+}

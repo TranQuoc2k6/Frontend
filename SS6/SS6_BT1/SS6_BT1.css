@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(23 94 130);
+}
+
+h3 {
+    color: rgb(31 126 173);
+}
+
+p {
+    color: rgb(29 65 94);
+}
+
+.highligh {
+    background-color: rgb(245 231 163);
+}

@@ -1,0 +1,12 @@
+let number = 10;
+console.log(number);
+let price = 20.5;
+console.log(price);
+let statuss = true;
+console.log(statuss);
+let city = "Hà Nội";
+console.log(city);
+document.writeln(number);
+document.writeln(price);
+document.writeln(statuss);
+document.writeln(city);
