@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+.icon-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-logo div {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.home-list {
+    display: flex;
+    align-items: center;
+}
+
+.home-list ul {
+    display: flex;
+    gap: 23px;
+    list-style: none;
+}
+
+.home-list ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #374151;
+    text-decoration: none;
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-nav button {
+    width: 97px;
+    height: 31px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-nav :nth-child(1) {
+    color: #374151;
+    background-color: transparent;
+}
+
+.btn-nav :nth-child(2) {
+    background: linear-gradient(to right, #2563EB, #9333EA);
+    font-weight: 400;
+    font-size: 13.3px;
+    color: #FFFFFF;
+}
+
+main {
+    border-top: 1px solid #E5E7EB;
+}
+
+.feature {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-feature {
+    font-weight: 400;
+    font-size: 15.6px;
+    margin: 80px auto 24px auto;
+    width: 173.30999755859375px;
+    height: 41.59000015258789px;
+    border-radius: 9999px;
+    background-color: #DBEAFE;
+    align-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15.6px;
+}
+
+.feature h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.note-feature {
+    width: 767px;
+    font-weight: 400;
+    font-size: 19.7px;
+    line-height: 32px;
+    color: #6B7280;
+    align-content: center;
+    margin: 0 auto 69px auto;
+    text-align: center;
+}
+
+.list-feature {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.name-feature {
+    width: 384px;
+    height: 274px;
+    padding: 33px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    flex: calc((100% - 64px) / 3);
+}
+
+.name-feature h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 24px 0 17px 0;
+    color: #111827;
+}
+
+.name-feature p {
+    font-weight: 400;
+    font-size: 15.9px;
+    line-height: 28px;
+    color: #6B7280;
+}
